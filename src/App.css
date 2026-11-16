@@ -1,2 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hwb(0 92% 7%);
+  color: rgb(0, 29, 2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
