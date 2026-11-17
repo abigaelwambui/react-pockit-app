@@ -1,12 +1,11 @@
+import { useContext } from "react"
+import { StoresContext } from "../contexts/StoresContext"
+
 export default function PopularStores(){
 
-    const [ stores, setStores ] = useState([])
+    const { stores } = useContext(StoresContext)
 
-    useEffect(() => {
-    fetch("http://localhost:3000/retailers")
-    .then((response)=> response.json())
-    .then((data)=> setStores(data))
-    })
+    const popularStores = stores.filter((store)=> store.couponStats.performanceLabel === "top-performer")
 
     return (
         <>
