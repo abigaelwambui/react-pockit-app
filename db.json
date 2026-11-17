@@ -1,10 +1,12 @@
 {
   "meta": {
-    "apiName": "Pockit Mock Product API",
-    "version": "1.0.0",
-    "description": "Fictional sample data for development only. Not real retailer prices or offers.",
+    "apiName": "Pockit Mock Product and Coupon API",
+    "version": "2.0.0",
+    "description": "Fictional sample data for Pockit development and UI testing only. Retailers, prices, coupon performance and offers are not real.",
     "currency": "KES",
-    "lastUpdated": "2026-10-19T09:00:00Z"
+    "lastUpdated": "2026-11-17T12:00:00Z",
+    "dataStatus": "fictional_demo",
+    "notice": "No coupon in this dataset is redeemable at a real retailer."
   },
   "retailers": [
     {
@@ -13,7 +15,12 @@
       "type": "online_shop",
       "imageUrl": "https://i.pinimg.com/736x/fd/85/9e/fd859ef51486d397f541d978b954aed9.jpg",
       "website": "https://example.com/samplemart",
-      "dataStatus": "fictional_demo"
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 4,
+        "totalDemoRedemptions": 1860,
+        "performanceLabel": "top_performer"
+      }
     },
     {
       "id": "shop-002",
@@ -21,7 +28,12 @@
       "type": "online_shop",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwKtRYkp6-Cz8Py6bYjAUY3A0eH6vcpam5Mx4HCgrfqKNh4pqrx12t2s&s=10",
       "website": "https://example.com/demodeals",
-      "dataStatus": "fictional_demo"
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 3,
+        "totalDemoRedemptions": 1240,
+        "performanceLabel": "top_performer"
+      }
     },
     {
       "id": "shop-003",
@@ -29,7 +41,77 @@
       "type": "online_shop",
       "imageUrl": "https://img.magnific.com/premium-vector/shopping-mart-logo-design-vector-format_460675-16.jpg",
       "website": "https://example.com/pockitteststore",
-      "dataStatus": "fictional_demo"
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 2,
+        "totalDemoRedemptions": 690,
+        "performanceLabel": "popular"
+      }
+    },
+    {
+      "id": "shop-004",
+      "name": "Fresh Basket",
+      "type": "supermarket",
+      "imageUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600",
+      "website": "https://example.com/freshbasket",
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 3,
+        "totalDemoRedemptions": 980,
+        "performanceLabel": "popular"
+      }
+    },
+    {
+      "id": "shop-005",
+      "name": "Tech Haven",
+      "type": "online_shop",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600",
+      "website": "https://example.com/techhaven",
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 2,
+        "totalDemoRedemptions": 540,
+        "performanceLabel": "popular"
+      }
+    },
+    {
+      "id": "shop-006",
+      "name": "Home Essentials",
+      "type": "supermarket",
+      "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600",
+      "website": "https://example.com/homeessentials",
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 1,
+        "totalDemoRedemptions": 210,
+        "performanceLabel": "growing"
+      }
+    },
+    {
+      "id": "shop-007",
+      "name": "Style Corner",
+      "type": "online_shop",
+      "imageUrl": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600",
+      "website": "https://example.com/stylecorner",
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 2,
+        "totalDemoRedemptions": 430,
+        "performanceLabel": "popular"
+      }
+    },
+    {
+      "id": "shop-008",
+      "name": "Value Pharmacy Demo",
+      "type": "online_shop",
+      "imageUrl": "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600",
+      "website": "https://example.com/valuepharmacy",
+      "dataStatus": "fictional_demo",
+      "couponStats": {
+        "successfulCoupons": 1,
+        "totalDemoRedemptions": 160,
+        "performanceLabel": "newcomer"
+      }
     }
   ],
   "products": [
@@ -45,54 +127,12 @@
       "price": 280,
       "originalPrice": 320,
       "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
+      "lastChecked": "2026-11-17T12:00:00Z",
       "productUrl": "https://example.com/samplemart/cooking-oil",
-      "discount": {
-        "type": "percentage",
-        "value": 12.5,
-        "voucherCode": null,
-        "terms": "Fictional demo offer."
-      }
+      "couponId": "coupon-001"
     },
     {
       "id": "prod-002",
-      "name": "Sunflower Cooking Oil",
-      "brand": "Sample Gold",
-      "category": "Groceries",
-      "size": "1 litre",
-      "barcode": "MOCK000001",
-      "imageUrl": "https://asiathaiagro.com/wp-content/uploads/2025/07/Sunflower-Oil.jpeg",
-      "retailerId": "shop-002",
-      "price": 299,
-      "originalPrice": 299,
-      "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
-      "productUrl": "https://example.com/demodeals/cooking-oil",
-      "discount": null
-    },
-    {
-      "id": "prod-003",
-      "name": "Sunflower Cooking Oil",
-      "brand": "Sample Gold",
-      "category": "Groceries",
-      "size": "1 litre",
-      "barcode": "MOCK000001",
-      "imageUrl": "https://asiathaiagro.com/wp-content/uploads/2025/07/Sunflower-Oil.jpeg",
-      "retailerId": "shop-003",
-      "price": 275,
-      "originalPrice": 300,
-      "inStock": false,
-      "lastChecked": "2026-10-19T09:00:00Z",
-      "productUrl": "https://example.com/pockitteststore/cooking-oil",
-      "discount": {
-        "type": "percentage",
-        "value": 8.33,
-        "voucherCode": "DEMO10",
-        "terms": "Fictional demo voucher; not redeemable."
-      }
-    },
-    {
-      "id": "prod-004",
       "name": "Long-Grain Rice",
       "brand": "Harvest Demo",
       "category": "Groceries",
@@ -103,33 +143,12 @@
       "price": 340,
       "originalPrice": 360,
       "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
+      "lastChecked": "2026-11-17T12:00:00Z",
       "productUrl": "https://example.com/samplemart/rice",
-      "discount": {
-        "type": "percentage",
-        "value": 5.56,
-        "voucherCode": null,
-        "terms": "Fictional demo offer."
-      }
+      "couponId": "coupon-002"
     },
     {
-      "id": "prod-005",
-      "name": "Long-Grain Rice",
-      "brand": "Harvest Demo",
-      "category": "Groceries",
-      "size": "2 kg",
-      "barcode": "MOCK000004",
-      "imageUrl": "https://www.cloudflexfilm.com/wp-content/uploads/2025/11/Rice-Packaging-Pouch.jpg",
-      "retailerId": "shop-002",
-      "price": 325,
-      "originalPrice": 325,
-      "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
-      "productUrl": "https://example.com/demodeals/rice",
-      "discount": null
-    },
-    {
-      "id": "prod-006",
+      "id": "prod-003",
       "name": "Wireless Earbuds",
       "brand": "SoundDemo",
       "category": "Electronics",
@@ -140,33 +159,28 @@
       "price": 1499,
       "originalPrice": 1999,
       "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
+      "lastChecked": "2026-11-17T12:00:00Z",
       "productUrl": "https://example.com/samplemart/earbuds",
-      "discount": {
-        "type": "percentage",
-        "value": 25.01,
-        "voucherCode": "SAMPLE500",
-        "terms": "Fictional demo voucher; not redeemable."
-      }
+      "couponId": "coupon-003"
     },
     {
-      "id": "prod-007",
-      "name": "Wireless Earbuds",
-      "brand": "SoundDemo",
-      "category": "Electronics",
-      "size": "1 pair",
-      "barcode": "MOCK000006",
-      "imageUrl": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/23/4653603/1.jpg?5010",
+      "id": "prod-004",
+      "name": "Oats",
+      "brand": "Breakfast Demo",
+      "category": "Groceries",
+      "size": "1 kg",
+      "barcode": "MOCK000010",
+      "imageUrl": "https://hellofoods.co.za/wp-content/uploads/2025/04/10-scaled.jpg",
       "retailerId": "shop-002",
-      "price": 1599,
-      "originalPrice": 1599,
+      "price": 250,
+      "originalPrice": 280,
       "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
-      "productUrl": "https://example.com/demodeals/earbuds",
-      "discount": null
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/demodeals/oats",
+      "couponId": "coupon-004"
     },
     {
-      "id": "prod-008",
+      "id": "prod-005",
       "name": "Laundry Detergent",
       "brand": "CleanDemo",
       "category": "Household",
@@ -177,17 +191,12 @@
       "price": 210,
       "originalPrice": 240,
       "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
+      "lastChecked": "2026-11-17T12:00:00Z",
       "productUrl": "https://example.com/pockitteststore/detergent",
-      "discount": {
-        "type": "percentage",
-        "value": 12.5,
-        "voucherCode": null,
-        "terms": "Fictional demo offer."
-      }
+      "couponId": "coupon-005"
     },
     {
-      "id": "prod-009",
+      "id": "prod-006",
       "name": "USB-C Charger",
       "brand": "ChargeDemo",
       "category": "Electronics",
@@ -198,49 +207,551 @@
       "price": 799,
       "originalPrice": 899,
       "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
+      "lastChecked": "2026-11-17T12:00:00Z",
       "productUrl": "https://example.com/pockitteststore/charger",
-      "discount": {
-        "type": "percentage",
-        "value": 11.12,
-        "voucherCode": null,
-        "terms": "Fictional demo offer."
-      }
+      "couponId": "coupon-006"
+    },
+    {
+      "id": "prod-007",
+      "name": "Fresh Milk",
+      "brand": "Daily Demo",
+      "category": "Groceries",
+      "size": "1 litre",
+      "barcode": "MOCK000011",
+      "imageUrl": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=600",
+      "retailerId": "shop-004",
+      "price": 75,
+      "originalPrice": 85,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/freshbasket/milk",
+      "couponId": "coupon-007"
+    },
+    {
+      "id": "prod-008",
+      "name": "Peanut Butter",
+      "brand": "Nutty Demo",
+      "category": "Groceries",
+      "size": "400 g",
+      "barcode": "MOCK000012",
+      "imageUrl": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=600",
+      "retailerId": "shop-004",
+      "price": 320,
+      "originalPrice": 360,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/freshbasket/peanut-butter",
+      "couponId": "coupon-008"
+    },
+    {
+      "id": "prod-009",
+      "name": "Bluetooth Speaker",
+      "brand": "SoundDemo",
+      "category": "Electronics",
+      "size": "Portable",
+      "barcode": "MOCK000013",
+      "imageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600",
+      "retailerId": "shop-005",
+      "price": 2499,
+      "originalPrice": 2999,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/techhaven/speaker",
+      "couponId": "coupon-009"
     },
     {
       "id": "prod-010",
-      "name": "Oats",
-      "brand": "Breakfast Demo",
-      "category": "Groceries",
-      "size": "1 kg",
-      "barcode": "MOCK000010",
-      "imageUrl": "https://hellofoods.co.za/wp-content/uploads/2025/04/10-scaled.jpg",
-      "retailerId": "shop-002",
-      "price": 250,
-      "originalPrice": 250,
+      "name": "Wireless Mouse",
+      "brand": "ClickDemo",
+      "category": "Electronics",
+      "size": "2.4 GHz",
+      "barcode": "MOCK000014",
+      "imageUrl": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=600",
+      "retailerId": "shop-005",
+      "price": 899,
+      "originalPrice": 1099,
       "inStock": true,
-      "lastChecked": "2026-10-19T09:00:00Z",
-      "productUrl": "https://example.com/demodeals/oats",
-      "discount": null
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/techhaven/mouse",
+      "couponId": "coupon-010"
+    },
+    {
+      "id": "prod-011",
+      "name": "Dishwashing Liquid",
+      "brand": "SparkDemo",
+      "category": "Household",
+      "size": "750 ml",
+      "barcode": "MOCK000015",
+      "imageUrl": "https://images.unsplash.com/photo-1585421514285-efb74c2b69ba?w=600",
+      "retailerId": "shop-006",
+      "price": 180,
+      "originalPrice": 210,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/homeessentials/dishwashing-liquid",
+      "couponId": "coupon-011"
+    },
+    {
+      "id": "prod-012",
+      "name": "Cotton T-Shirt",
+      "brand": "Everyday Demo",
+      "category": "Fashion",
+      "size": "Medium",
+      "barcode": "MOCK000016",
+      "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600",
+      "retailerId": "shop-007",
+      "price": 650,
+      "originalPrice": 850,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/stylecorner/tshirt",
+      "couponId": "coupon-012"
+    },
+    {
+      "id": "prod-013",
+      "name": "Backpack",
+      "brand": "CarryDemo",
+      "category": "Fashion",
+      "size": "20 litre",
+      "barcode": "MOCK000017",
+      "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600",
+      "retailerId": "shop-007",
+      "price": 1299,
+      "originalPrice": 1499,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/stylecorner/backpack",
+      "couponId": "coupon-013"
+    },
+    {
+      "id": "prod-014",
+      "name": "Daily Multivitamin Demo",
+      "brand": "WellDemo",
+      "category": "Personal Care",
+      "size": "30 tablets",
+      "barcode": "MOCK000018",
+      "imageUrl": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=600",
+      "retailerId": "shop-008",
+      "price": 550,
+      "originalPrice": 620,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/valuepharmacy/multivitamin",
+      "couponId": "coupon-014"
+    },
+    {
+      "id": "prod-015",
+      "name": "Brown Bread",
+      "brand": "Daily Demo",
+      "category": "Groceries",
+      "size": "400 g",
+      "barcode": "MOCK000019",
+      "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600",
+      "retailerId": "shop-002",
+      "price": 65,
+      "originalPrice": 75,
+      "inStock": true,
+      "lastChecked": "2026-11-17T12:00:00Z",
+      "productUrl": "https://example.com/demodeals/bread",
+      "couponId": "coupon-015"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "coupon-001",
+      "retailerId": "shop-001",
+      "code": "GOLDEN15",
+      "title": "15% off your grocery basket",
+      "description": "Save on selected pantry essentials.",
+      "discountType": "percentage",
+      "discountValue": 15,
+      "minimumSpend": 800,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 820,
+        "successRate": 92
+      },
+      "isLimited": false,
+      "usageLimit": 2000,
+      "usedCount": 820,
+      "startsAt": "2026-10-01T00:00:00Z",
+      "expiresAt": "2026-12-15T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-002",
+      "retailerId": "shop-001",
+      "code": "RICE20",
+      "title": "KES 20 off rice",
+      "description": "A sample discount on selected rice packs.",
+      "discountType": "fixed",
+      "discountValue": 20,
+      "minimumSpend": 300,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 540,
+        "successRate": 89
+      },
+      "isLimited": false,
+      "usageLimit": 1500,
+      "usedCount": 540,
+      "startsAt": "2026-10-10T00:00:00Z",
+      "expiresAt": "2026-12-20T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-003",
+      "retailerId": "shop-001",
+      "code": "TECH500",
+      "title": "KES 500 off selected audio",
+      "description": "A popular sample electronics offer.",
+      "discountType": "fixed",
+      "discountValue": 500,
+      "minimumSpend": 1800,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 500,
+        "successRate": 87
+      },
+      "isLimited": false,
+      "usageLimit": 1000,
+      "usedCount": 500,
+      "startsAt": "2026-09-15T00:00:00Z",
+      "expiresAt": "2026-12-01T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-004",
+      "retailerId": "shop-002",
+      "code": "DEMO25",
+      "title": "25% off breakfast picks",
+      "description": "Save on selected breakfast products.",
+      "discountType": "percentage",
+      "discountValue": 25,
+      "minimumSpend": 400,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 610,
+        "successRate": 94
+      },
+      "isLimited": false,
+      "usageLimit": 1200,
+      "usedCount": 610,
+      "startsAt": "2026-10-05T00:00:00Z",
+      "expiresAt": "2026-12-10T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-005",
+      "retailerId": "shop-003",
+      "code": "CLEAN10",
+      "title": "10% off household essentials",
+      "description": "A sample saving on selected home-care items.",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "minimumSpend": 500,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 390,
+        "successRate": 86
+      },
+      "isLimited": false,
+      "usageLimit": 800,
+      "usedCount": 390,
+      "startsAt": "2026-10-12T00:00:00Z",
+      "expiresAt": "2026-12-18T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-006",
+      "retailerId": "shop-003",
+      "code": "POCKITNEW",
+      "title": "New: 12% off tech accessories",
+      "description": "A newly added sample offer for selected accessories.",
+      "discountType": "percentage",
+      "discountValue": 12,
+      "minimumSpend": 700,
+      "status": "new",
+      "performance": {
+        "demoRedemptions": 0,
+        "successRate": null
+      },
+      "isLimited": false,
+      "usageLimit": 500,
+      "usedCount": 0,
+      "startsAt": "2026-11-15T00:00:00Z",
+      "expiresAt": "2026-12-31T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": true,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-007",
+      "retailerId": "shop-004",
+      "code": "FRESH50",
+      "title": "KES 50 off fresh picks",
+      "description": "A sample saving on selected fresh-food items.",
+      "discountType": "fixed",
+      "discountValue": 50,
+      "minimumSpend": 500,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 470,
+        "successRate": 91
+      },
+      "isLimited": false,
+      "usageLimit": 1000,
+      "usedCount": 470,
+      "startsAt": "2026-10-01T00:00:00Z",
+      "expiresAt": "2026-12-05T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-008",
+      "retailerId": "shop-004",
+      "code": "BASKET10",
+      "title": "10% off your next basket",
+      "description": "A newly added supermarket sample coupon.",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "minimumSpend": 1000,
+      "status": "new",
+      "performance": {
+        "demoRedemptions": 0,
+        "successRate": null
+      },
+      "isLimited": false,
+      "usageLimit": 600,
+      "usedCount": 0,
+      "startsAt": "2026-11-16T00:00:00Z",
+      "expiresAt": "2026-12-20T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": true,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-009",
+      "retailerId": "shop-005",
+      "code": "SOUND300",
+      "title": "KES 300 off audio gear",
+      "description": "A popular sample deal on selected audio products.",
+      "discountType": "fixed",
+      "discountValue": 300,
+      "minimumSpend": 2000,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 360,
+        "successRate": 88
+      },
+      "isLimited": false,
+      "usageLimit": 700,
+      "usedCount": 360,
+      "startsAt": "2026-10-01T00:00:00Z",
+      "expiresAt": "2026-12-08T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-010",
+      "retailerId": "shop-005",
+      "code": "FLASH100",
+      "title": "KES 100 off accessories",
+      "description": "Limited sample offer with a small number of uses left.",
+      "discountType": "fixed",
+      "discountValue": 100,
+      "minimumSpend": 800,
+      "status": "limited",
+      "performance": {
+        "demoRedemptions": 175,
+        "successRate": 82
+      },
+      "isLimited": true,
+      "usageLimit": 200,
+      "usedCount": 175,
+      "startsAt": "2026-11-10T00:00:00Z",
+      "expiresAt": "2026-11-22T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-011",
+      "retailerId": "shop-006",
+      "code": "HOME15",
+      "title": "15% off home-care essentials",
+      "description": "A newly added sample offer for household items.",
+      "discountType": "percentage",
+      "discountValue": 15,
+      "minimumSpend": 600,
+      "status": "new",
+      "performance": {
+        "demoRedemptions": 0,
+        "successRate": null
+      },
+      "isLimited": false,
+      "usageLimit": 400,
+      "usedCount": 0,
+      "startsAt": "2026-11-17T00:00:00Z",
+      "expiresAt": "2026-12-17T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": true,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-012",
+      "retailerId": "shop-007",
+      "code": "STYLE20",
+      "title": "20% off selected clothing",
+      "description": "A popular sample fashion coupon.",
+      "discountType": "percentage",
+      "discountValue": 20,
+      "minimumSpend": 1000,
+      "status": "successful",
+      "performance": {
+        "demoRedemptions": 310,
+        "successRate": 90
+      },
+      "isLimited": false,
+      "usageLimit": 700,
+      "usedCount": 310,
+      "startsAt": "2026-10-01T00:00:00Z",
+      "expiresAt": "2026-12-12T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-013",
+      "retailerId": "shop-007",
+      "code": "LASTCALL50",
+      "title": "KES 50 off bags",
+      "description": "Limited sample coupon with only a few demo uses remaining.",
+      "discountType": "fixed",
+      "discountValue": 50,
+      "minimumSpend": 1000,
+      "status": "limited",
+      "performance": {
+        "demoRedemptions": 96,
+        "successRate": 79
+      },
+      "isLimited": true,
+      "usageLimit": 100,
+      "usedCount": 96,
+      "startsAt": "2026-11-12T00:00:00Z",
+      "expiresAt": "2026-11-21T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-014",
+      "retailerId": "shop-008",
+      "code": "WELCOME8",
+      "title": "8% off your first basket",
+      "description": "A new-customer sample offer, recently added.",
+      "discountType": "percentage",
+      "discountValue": 8,
+      "minimumSpend": 500,
+      "status": "new",
+      "performance": {
+        "demoRedemptions": 0,
+        "successRate": null
+      },
+      "isLimited": false,
+      "usageLimit": 300,
+      "usedCount": 0,
+      "startsAt": "2026-11-17T00:00:00Z",
+      "expiresAt": "2026-12-31T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": true,
+      "terms": "Fictional demo coupon. Not redeemable."
+    },
+    {
+      "id": "coupon-015",
+      "retailerId": "shop-002",
+      "code": "QUICKDEAL",
+      "title": "KES 10 off bakery picks",
+      "description": "A short-window sample offer with limited uses.",
+      "discountType": "fixed",
+      "discountValue": 10,
+      "minimumSpend": 50,
+      "status": "limited",
+      "performance": {
+        "demoRedemptions": 145,
+        "successRate": 84
+      },
+      "isLimited": true,
+      "usageLimit": 160,
+      "usedCount": 145,
+      "startsAt": "2026-11-15T00:00:00Z",
+      "expiresAt": "2026-11-19T23:59:59Z",
+      "isRedeemable": false,
+      "isNew": false,
+      "terms": "Fictional demo coupon. Not redeemable."
     }
   ],
   "vouchers": [
     {
       "id": "voucher-001",
-      "retailerId": "shop-003",
-      "code": "DEMO10",
-      "description": "Sample voucher for testing only",
-      "minimumSpend": 500,
-      "expiresAt": "2026-12-31T23:59:59Z",
+      "retailerId": "shop-001",
+      "couponId": "coupon-001",
+      "code": "GOLDEN15",
+      "description": "Sample grocery coupon for UI testing",
+      "minimumSpend": 800,
+      "expiresAt": "2026-12-15T23:59:59Z",
       "isRedeemable": false
     },
     {
       "id": "voucher-002",
       "retailerId": "shop-001",
-      "code": "SAMPLE500",
-      "description": "Sample electronics voucher for testing only",
-      "minimumSpend": 1000,
+      "couponId": "coupon-003",
+      "code": "TECH500",
+      "description": "Sample electronics coupon for UI testing",
+      "minimumSpend": 1800,
+      "expiresAt": "2026-12-01T23:59:59Z",
+      "isRedeemable": false
+    },
+    {
+      "id": "voucher-003",
+      "retailerId": "shop-003",
+      "couponId": "coupon-006",
+      "code": "POCKITNEW",
+      "description": "New sample accessory coupon",
+      "minimumSpend": 700,
       "expiresAt": "2026-12-31T23:59:59Z",
+      "isRedeemable": false
+    },
+    {
+      "id": "voucher-004",
+      "retailerId": "shop-005",
+      "couponId": "coupon-010",
+      "code": "FLASH100",
+      "description": "Limited sample accessories coupon",
+      "minimumSpend": 800,
+      "expiresAt": "2026-11-22T23:59:59Z",
+      "isRedeemable": false
+    },
+    {
+      "id": "voucher-005",
+      "retailerId": "shop-007",
+      "couponId": "coupon-013",
+      "code": "LASTCALL50",
+      "description": "Limited sample fashion coupon",
+      "minimumSpend": 1000,
+      "expiresAt": "2026-11-21T23:59:59Z",
       "isRedeemable": false
     }
   ]

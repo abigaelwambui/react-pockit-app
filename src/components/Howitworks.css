@@ -1,0 +1,40 @@
+.pockit-show .card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.pockit-show .card-row {
+    border: none !important;
+    box-shadow: none;
+}
+
+.pockit-show .card-body {
+
+    border: none !important;
+    outline: none;
+    box-shadow: none;
+    color: #2e1c4a;
+}
+
+.pockit-show h1 {
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 16px 0 30px 0;
+    color: #2e1c4a;
+}
+
+.pockit-show .card-title {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 500;
+}
+.pockit-show .card-text {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 200;
+}
+
+
