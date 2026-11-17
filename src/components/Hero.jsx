@@ -1,18 +1,25 @@
+import hero from "../assets/Hero-2.png"
+import "./Hero.css"
+
+
+
 export default function Hero() {
     return (
-        <>
-        <div className="container-fluid hero">
-            <div className="row">
-                <div className="col-6">
-                    <h1 className="text-white">Find the Deal.</h1>
-                            <h1 className="text-green">Keep the Difference.</h1>
-                            <p>Compare prices across supermarkets and online shops, discover discounts, and find vouchers — all in one place.</p>
-                            <br/>
-                            <div><a className="btn-outline theme-inverse" href="#stores">Shop now</a></div>
-                </div>
-
+        <header>
+        <div className="left">
+            <h1 className="text-green">Find the Deal, Keep the Difference</h1>
+            <p>Compare prices across supermarkets and online shops, discover discounts, and find vouchers — all in one place.</p>
+            <div>
+                <a className="btn-outline theme-accent" href="#stores">Get Started</a>
+                <a className="btn-solid theme-accent mx-3" href="#stores">Contact us</a>
             </div>
         </div>
-        </>
+
+        <div className="right">
+            <img src={hero} alt="hero"/>
+        </div>
+        <div className="bg-color"></div>
+        
+        </header>
     )
 }

@@ -1,0 +1,68 @@
+header img {
+    width: 100%;
+    display: flez
+}
+
+
+
+header h1 {
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 16px 0;
+    background: linear-gradient(90deg, #4c3fad 20%, #1a1423 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+
+}
+
+header p {
+    font-size: 16px;
+    line-height: 160%;
+    
+}
+
+header .left {
+    margin-left: 3rem;
+    max-width: 50%;
+
+}
+
+header .right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+header .right img {
+    height: 900px;
+    object-fit: cover;
+
+}
+
+header .bg-color {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #ad95ff;
+    right: 0;
+    top: 120px;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(115px);
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    min-height: 600px;
+    max-height: 800px;
+    padding-top: 70px;
+    position: relative;
+
+}
