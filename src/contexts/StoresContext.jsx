@@ -1,3 +1,14 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-export const StoreContext = createContext
+export const StoresContext = createContext()
+
+export function StoresProvider({children}) {
+
+    const [stores, setStores] = useState([])
+
+    return (<>
+    <StoresContext.Provider value={{stores, setStores}}>
+        {children}
+    </StoresContext.Provider>
+    </>)
+}
