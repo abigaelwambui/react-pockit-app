@@ -3,6 +3,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import { ProductContext } from './contexts/ProductsContext'
+import HowItWorks from './components/HowItWorks'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <ProductContext values = {{products, setProducts}}>
       <NavBar/>
       <Hero/>
+      <HowItWorks/>
     </ProductContext>
     
 
