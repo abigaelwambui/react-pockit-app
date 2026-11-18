@@ -8,6 +8,7 @@ export default function StoreCard({store}) {
                         <h4 className="card-title">{store.name}</h4>
                         <p className="card-text">{store.couponStats.successfulCoupons} Coupons</p>
                         <p><small>Very High Coupon Success Rate</small></p>
+                        <button className="btn-outline theme-accent">View {store.name}</button>
                     </div>
                 </div>
             </div> 
