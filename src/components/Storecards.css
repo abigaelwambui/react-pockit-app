@@ -10,7 +10,7 @@
 
 .stores .card-img-start {
     height: 100%;
-    width: 100%;
+    width: 50%;
     object-fit: cover;
     display: flex;
 }

@@ -7,7 +7,7 @@ export function ProductsProvider({children}) {
 
     useEffect(()=> {
         fetch("http://localhost:3000/products")
-        .then((response)=> response.json)
+        .then((response)=> response.json())
         .then((data)=> setProducts(data))
     }, [setProducts])
 

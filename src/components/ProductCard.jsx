@@ -1,23 +1,23 @@
 import { useContext } from "react"
 import { ProductsContext } from "../contexts/ProductsContext"
 
-export default function ProductCard ({product, productName}) {
+export default function ProductCard ({specificProduct}) {
 
     const {products} = useContext(ProductsContext)
 
-    const productsInStore = products.filter((product)=> product.name === productName)
+    const productStore = products.filter((product)=> product.name === specificProduct.name)
 
    
 
     return (
         <>
-        <div key={product.id} className="card col-3 m-1 p-0">
-            <img src={product.imageUrl} className="card-img-top" alt={productName}/>
+        <div key={specificProduct.id} className="card col h-100 m-1 p-0">
+            <img src={specificProduct.imageUrl} className="card-img-top" alt={specificProduct.name}/>
             <div className="card-body">
-                <h5 className="card-title">{productName}</h5>
-                <p className="card-text">Price: {product.price}</p>
-                <p className="card-text">Original Price: {product.originalPrice}</p>
-                <button className="btn btn-small my-3">Available in {productsInStore.length} stores</button>
+                <h5 className="card-title">{specificProduct.name}</h5>
+                <p className="card-text">Price: {specificProduct.price}</p>
+                <p className="card-text">Original Price: {specificProduct.originalPrice}</p>
+                <button className="btn btn-small my-3">Available in {productStore.length} stores</button>
 
             </div>
         </div>

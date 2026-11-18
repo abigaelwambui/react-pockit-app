@@ -7,7 +7,7 @@ export default function Products() {
     const {products} = useContext(ProductsContext)
     const {stores} = useContext(StoresContext)
    
-    c
+    
 
     
 

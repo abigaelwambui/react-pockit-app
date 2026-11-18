@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import "./Storecards.css"
 
 export default function StoreCard({store}) {
@@ -11,7 +12,8 @@ export default function StoreCard({store}) {
                         <h4 className="card-title">{store.name}</h4>
                         <p className="card-text">{store.couponStats.successfulCoupons} Coupons</p>
                         <p><small>Very High Coupon Success Rate</small></p>
-                        <button className="btn-outline btn-small theme-accent">View store</button>
+                        
+                        <Link className="btn-outline btn-small theme-accent" to={`/stores/${store.id}`}>View store</Link>
                     </div>
                 </div>
             </div> 
