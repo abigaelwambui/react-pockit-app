@@ -1,0 +1,16 @@
+.popular-stores .card {
+    background: rgba(240, 219, 252, 0.495);
+    border: none !important;
+    height:200px
+}
+
+.popular-stores .card-body {
+    border: none !important;
+}
+
+.popular-stores .card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}

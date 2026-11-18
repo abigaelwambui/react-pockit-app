@@ -1,0 +1,18 @@
+#footer {
+    color: hwb(302 0% 79%);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+li .footer-link{
+    text-decoration: none;
+    color: hwb(302 0% 79%);
+}

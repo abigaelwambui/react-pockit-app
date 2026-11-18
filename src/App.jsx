@@ -5,6 +5,9 @@ import Hero from './components/Hero'
 
 import HowItWorks from './components/HowItWorks'
 import { StoresProvider } from './contexts/StoresContext'
+import { ProductsProvider } from './contexts/ProductsContext'
+import PopularStores from './components/PopularStores'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -12,12 +15,15 @@ function App() {
   return (
     <>
     <StoresProvider>
-      
-      <NavBar/>
-      <Hero/>
-      <HowItWorks/>
+      <ProductsProvider>
+        <NavBar/>
+        <Hero/>
+        <HowItWorks/>
+        <PopularStores/>
+
+        <Footer/>
+      </ProductsProvider>  
     </StoresProvider>
-  <ProductsProvider></ProductsProvider>
       
    
     
