@@ -3,11 +3,13 @@ import './App.css'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 
-import HowItWorks from './components/HowItWorks'
+
 import { StoresProvider } from './contexts/StoresContext'
 import { ProductsProvider } from './contexts/ProductsContext'
-import PopularStores from './components/PopularStores'
+
 import Footer from './components/Footer'
+import AppRoutes from './routes/routes'
+import LandingPage from './components/LandingPage'
 
 function App() {
 
@@ -17,10 +19,7 @@ function App() {
     <StoresProvider>
       <ProductsProvider>
         <NavBar/>
-        <Hero/>
-        <HowItWorks/>
-        <br/>
-        <PopularStores/>
+        <AppRoutes/>
         <br/>
         <hr/>
         <br/>

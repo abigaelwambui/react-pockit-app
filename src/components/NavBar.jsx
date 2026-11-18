@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logo from "../assets/Pockit logo.png"
 import "./Nav.css"
 
@@ -21,10 +22,10 @@ export default function NavBar () {
                             <div className="p-2 flex-grow-1">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                        <Link className="nav-link active" aria-current="page" to={"/home"}>Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Stores</a>
+                                        <Link className="nav-link" aria-current="page" to={"/stores"}>Stores</Link>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">Products</a>

@@ -1,14 +1,14 @@
-.popular-stores .card {
+.stores .card {
     background: rgba(240, 219, 252, 0.495);
     border: none !important;
-    height:200px
+    height:250px
 }
 
-.popular-stores .card-body {
+.stores .card-body {
     border: none !important;
 }
 
-.popular-stores .card-img-start {
+.stores .card-img-start {
     height: 100%;
     width: 100%;
     object-fit: cover;

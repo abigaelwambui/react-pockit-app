@@ -7,8 +7,9 @@ export default function StoreList() {
 
     return (
         <>
-            <div className="container my-9">
-                <div className="row row-cols-1 md:row-cols-3 g-4 my-6">
+            <div className="stores container my-9">
+                <h1>All Stores</h1>
+                <div className="row row-cols-1 md:row-cols-2 g-6 my-6">
                     {stores.map((store)=> (
                         <StoreCard
                         key = {store.id}
