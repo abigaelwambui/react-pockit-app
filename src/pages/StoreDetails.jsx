@@ -1,11 +1,15 @@
 import { useParams } from "react-router"
 import DiscountProducts from "../components/DiscountProducts"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { CompareContext } from "../contexts/CompareContext"
+import PriceCompare from "../components/PriceCompare"
+import SideCard from "../components/sideCard"
 
 export default function StoreDetails() {
 
     const {id} = useParams()
     const [store, setStore] = useState({})
+    const {isCompareOpen, selectedProduct, setIsCompareOpen} = useContext(CompareContext)
     
     useEffect (()=> {
         fetch(`http://localhost:3000/retailers/${id}`)
@@ -13,13 +17,23 @@ export default function StoreDetails() {
         .then ((data)=> {
             setStore(data)
         })
-    }, [])
+    }, [id])
 
     return (
-        <>
-        <div className="container">
-            <DiscountProducts store={store}/>
+        <div className="d-flex">
+        <SideCard store={store}/>
+        <div className="store-details-container">
+            
+            <div className="container store-details">
+                <h3>{store.name}: Exclusive Offers, and Discounts</h3>
+                <div>
+                    <DiscountProducts store={store}/>
+                    {isCompareOpen && selectedProduct && (<PriceCompare specificProduct={selectedProduct} onClose={() => setIsCompareOpen(false)}/>)}
+                </div>
+            </div>
+
         </div>
-        </>
+        </div>
+        
     )
 }

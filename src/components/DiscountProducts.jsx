@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { ProductsContext } from "../contexts/ProductsContext"
 import ProductCard from "./ProductCard"
 import { Link } from "react-router"
+import "./DiscountProducts.css"
 
 export default function DiscountProducts ({store}) {
     const {products} = useContext(ProductsContext)
@@ -15,19 +16,19 @@ export default function DiscountProducts ({store}) {
 
     return (
         <>
-        <div className="container">
-            <div className="left">
+        <div className="container discount-section" id="price-drop">
+            <div className="discount-left">
                 <p><big>Price Drops</big></p>
                 <p>Featured Price Drops from {store.name}</p>
                 <div>
-                    <Link className="btn-outline theme-accent" to="#stores">Shop all</Link>
-                    <a className="btn-solid theme-accent mx-3" href="#stores">Contact us</a>
+                    <Link className="btn-outline theme-accent" to={`/stores/${store.id}/products`}>Shop all</Link>
+                    
                 </div>
             </div>
-            <div className="right">
+            <div className="discount-right">
                 <div id="carouselMultiple" className="carousel slide" data-bs-ends="stop" style={{"--bs-carousel-items": 3, "--bs-carousel-items-gap": "1rem"}}>
                     <div className="d-flex justify-content-between align-items-center">
-                        <h5 className="mb-0">Three at a time</h5>
+                        <h5 className="mb-0">See more products...</h5>
                         <div>
                         <button className="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="prev" style={{"--bs-carousel-control-icon-width": "1rem"}}>
                             <span className="carousel-icon-prev" aria-hidden="true"></span>

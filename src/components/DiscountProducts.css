@@ -1,0 +1,49 @@
+.discount-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 90%;
+    height: 500px;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.discount-left {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.discount-right {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+}
+
+.discount-right .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.discount-right .carousel-item .card {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .discount-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .discount-left,
+    .discount-right {
+        width: 100%;
+        flex: auto;
+    }
+}

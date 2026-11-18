@@ -9,14 +9,17 @@ export default function StoreProducts({store}) {
     const storeProducts = products.filter((product)=> product.retailerId === store.id)
     return (
         <>
-            <div className="stores container my-9">
+            <div className="container my-9">
                 <h1>{store.name}</h1>
-                <div className="row row-cols-1 md:row-cols-3 g-6 my-6">
+                <div className="row g-3">
                     {storeProducts.map((product)=> (
-                        <ProductCard
+                        <div className="col-3">
+                            <ProductCard
                             key = {product.id}
                             specificProduct={product}
                         />
+                        </div>
+                        
                     ))}
                 </div>
             
