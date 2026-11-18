@@ -3,6 +3,7 @@ import "./Footer.css"
 export default function Footer () {
     return (
         <>
+
         <footer >
         <div id="footer">
             <div class="container">
@@ -50,7 +51,7 @@ export default function Footer () {
         </div>
         
         <hr/>
-        <p>©2026 Pockit-ECommerce Co.</p>
+        <p className="mx-3">©2026 Pockit-ECommerce Co.</p>
     </footer>
         </>
     )

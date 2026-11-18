@@ -8,7 +8,7 @@
     border: none !important;
 }
 
-.popular-stores .card-img-top {
+.popular-stores .card-img-start {
     height: 100%;
     width: 100%;
     object-fit: cover;

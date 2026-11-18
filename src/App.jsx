@@ -19,8 +19,11 @@ function App() {
         <NavBar/>
         <Hero/>
         <HowItWorks/>
+        <br/>
         <PopularStores/>
-
+        <br/>
+        <hr/>
+        <br/>
         <Footer/>
       </ProductsProvider>  
     </StoresProvider>
