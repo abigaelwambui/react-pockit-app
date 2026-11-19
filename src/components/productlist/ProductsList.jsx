@@ -1,9 +1,9 @@
 import { useContext, useMemo } from "react"
-import { ProductsContext } from "../contexts/ProductsContext"
-import ProductCard from "./productcard/ProductCard"
-import SingleProductCard from "./SingleProductCard"
-import { CompareContext } from "../contexts/CompareContext"
-import PriceCompare from "./PriceCompare"
+import { ProductsContext } from "../../contexts/ProductsContext"
+import SingleProductCard from "../SingleProductCard"
+import { CompareContext } from "../../contexts/CompareContext"
+import PriceCompare from "../PriceCompare"
+import "./ProductList.css"
 
 
 export default function ProductsList() {
@@ -51,7 +51,7 @@ export default function ProductsList() {
 
     return (
         <>
-        <div className="container my-9">
+        <div className="productlist container my-9">
             <h3>Browse Through All Products</h3>
 
             <div className="row g-3">

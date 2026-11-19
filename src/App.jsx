@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <>
+    <main>
     <StoresProvider>
       <ProductsProvider>
         <CompareProvider>
@@ -28,11 +28,7 @@ function App() {
         </CompareProvider> 
       </ProductsProvider>  
     </StoresProvider>
-      
-   
-    
-
-    </>
+    </main>
   )
 
 }

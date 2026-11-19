@@ -4,7 +4,7 @@ import "./Nav.css"
 
 export default function NavBar () {
     return (
-        <nav className="navbar sm:navbar-expand bg-1 fg-2">
+        <nav className="navbar fixed-top sm:navbar-expand bg-1 fg-2">
             <div className="container-fluid">
                 <div>
                     <a className="navbar-brand" href="#">

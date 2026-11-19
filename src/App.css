@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+    padding-top: 80px;
+}
+
 .original-price {
   text-decoration: line-through;
   color: gray;
