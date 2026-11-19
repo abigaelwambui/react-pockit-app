@@ -9,11 +9,12 @@ export default function ProductCard ({specificProduct}) {
 
     const productStore = products.filter((product)=> product.name === specificProduct.name)
 
-    const {setSelectedProduct, setIsCompareOpen} = useContext(CompareContext)
+    const {setSelectedProduct, setIsCompareOpen, setSource} = useContext(CompareContext)
 
     function handleClick () {
         setIsCompareOpen(true)
         setSelectedProduct(specificProduct)
+        setSource("storeDetails")
     }
 
 

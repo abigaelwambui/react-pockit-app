@@ -9,7 +9,9 @@ export function CouponsProvider({children}) {
         fetch("http://localhost:3000/coupons")
         .then((response)=> response.json())
         .then((data)=> setCoupons(data))
-    }, [setCoupons])
+
+        console.log(coupons)
+    }, [])
 
     return (
         <>
