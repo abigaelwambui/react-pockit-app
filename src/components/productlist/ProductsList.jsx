@@ -1,14 +1,13 @@
 import { useContext, useMemo } from "react"
 import { ProductsContext } from "../../contexts/ProductsContext"
-import SingleProductCard from "../SingleProductCard"
+import SingleProductCard from "../SingleProductCard./SingleProductCard"
 import { CompareContext } from "../../contexts/CompareContext"
 import PriceCompare from "../PriceCompare"
 import "./ProductList.css"
 
 
-export default function ProductsList() {
+export default function ProductsList({products}) {
 
-    const {products} = useContext(ProductsContext)
 
     const {isCompareOpen, selectedProduct, setIsCompareOpen, source} = useContext(CompareContext)
 

@@ -1,5 +1,6 @@
 import { useContext } from "react"
-import { CompareContext } from "../contexts/CompareContext"
+import { CompareContext } from "../../contexts/CompareContext"
+import "./singlecard.css"
 
 export default function SingleProductCard ({product}) {
     const {setSelectedProduct, setIsCompareOpen, setSource} = useContext(CompareContext)
@@ -10,11 +11,11 @@ export default function SingleProductCard ({product}) {
             setSelectedProduct(product)
             setSource("products")
         }
-    const { cheapestProduct, stores, storeCount } = product
+    const { cheapestProduct, storeCount } = product
 
     return (
         <>
-            <div  className="card h-100 p-0 product-card">
+            <div  className="card h-100 p-0 singleproduct-card">
                 <img src={product.imageUrl} className="card-img-top" alt={product.name}/>
                 <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
@@ -24,7 +25,7 @@ export default function SingleProductCard ({product}) {
                         <p className="card-text original-price">Ksh {cheapestProduct.originalPrice}</p>
                         </>                      
                     ) : (<p>Currently out of stock!</p>)}
-                    {storeCount > 1 && (<button className="btn btn-small my-3" onClick={handleClick}>Available in {stores.filter(item => item.inStock).length} stores</button>)}
+                    {storeCount > 1 && (<button className="btn btn-small my-3" onClick={handleClick}>Compare Prices</button>)}
                 </div>
             </div>
         </>

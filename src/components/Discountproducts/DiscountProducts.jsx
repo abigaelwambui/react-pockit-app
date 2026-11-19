@@ -30,14 +30,14 @@ export default function DiscountProducts ({store}) {
                     <div className="d-flex justify-content-between align-items-center">
                         <h5 className="mb-0">See more products...</h5>
                         <div>
-                        <button className="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="prev" style={{"--bs-carousel-control-icon-width": "1rem"}}>
-                            <span className="carousel-icon-prev" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="next" style={{"--bs-carousel-control-icon-width": "1rem"}}>
-                            <span className="carousel-icon-next" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
+                            <button className="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="prev" style={{"--bs-carousel-control-icon-width": "1rem"}}>
+                                <span className="carousel-icon-prev" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="next" style={{"--bs-carousel-control-icon-width": "1rem"}}>
+                                <span className="carousel-icon-next" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                     <div className="carousel-inner">

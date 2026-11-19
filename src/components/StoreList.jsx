@@ -1,9 +1,6 @@
-import { useContext } from "react"
-import { StoresContext } from "../contexts/StoresContext"
 import StoreCard from "./storecards/StoreCard"
 
-export default function StoreList() {
-    const {stores} = useContext(StoresContext)
+export default function StoreList({stores}) {
 
     return (
         <>

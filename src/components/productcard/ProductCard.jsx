@@ -26,7 +26,7 @@ export default function ProductCard ({specificProduct}) {
                 <h5 className="card-title">{specificProduct.name}</h5>
                 <p className="card-text">Price: {specificProduct.price}</p>
                 <p className="card-text original-price">Ksh {specificProduct.originalPrice}</p>
-                {productStore.length > 1 && (<button className="btn btn-small my-3" onClick={handleClick}>Available in {productStore.length} stores</button>)}
+                {productStore.length > 1 && (<button className="btn btn-small my-3" onClick={handleClick}>Compare Prices</button>)}
 
             </div>
         </div>
