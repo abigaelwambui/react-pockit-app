@@ -1,6 +1,6 @@
 import { useContext, useMemo } from "react"
 import { ProductsContext } from "../contexts/ProductsContext"
-import ProductCard from "./ProductCard"
+import ProductCard from "./productcard/ProductCard"
 import SingleProductCard from "./SingleProductCard"
 import { CompareContext } from "../contexts/CompareContext"
 import PriceCompare from "./PriceCompare"

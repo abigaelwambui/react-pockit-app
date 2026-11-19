@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
-import { ProductsContext } from "../contexts/ProductsContext"
+import { ProductsContext } from "../../contexts/ProductsContext"
 import "./ProductCard.css"
-import { CompareContext } from "../contexts/CompareContext"
+import { CompareContext } from "../../contexts/CompareContext"
 
 export default function ProductCard ({specificProduct}) {
 

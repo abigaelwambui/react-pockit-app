@@ -1,4 +1,5 @@
 import "./Footer.css"
+import NavBar from "../NavBar/NavBar"
 
 export default function Footer () {
     return (

@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { StoresContext } from "../contexts/StoresContext"
-import StoreCard from "./StoreCard"
+import StoreCard from "./storecards/StoreCard"
 
 export default function StoreList() {
     const {stores} = useContext(StoresContext)

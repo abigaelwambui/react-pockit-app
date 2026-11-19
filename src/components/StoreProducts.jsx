@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { ProductsContext } from "../contexts/ProductsContext"
-import ProductCard from "./ProductCard"
+import ProductCard from "./productcard/ProductCard"
 
 export default function StoreProducts({store}) {
 

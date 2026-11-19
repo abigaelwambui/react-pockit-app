@@ -1,4 +1,4 @@
-import online from "../assets/Purple Buy Shopping Bag Icon.png"
+
 import "./Howitworks.css"
 
 export default function HowItWorks (){

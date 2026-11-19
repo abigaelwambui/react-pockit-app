@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import logo from "../assets/Pockit logo.png"
+import logo from "../../assets/Pockit logo.png"
 import "./Nav.css"
 
 export default function NavBar () {

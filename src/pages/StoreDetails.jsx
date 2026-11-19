@@ -1,5 +1,5 @@
 import { useParams } from "react-router"
-import DiscountProducts from "../components/DiscountProducts"
+import DiscountProducts from "../components/Discountproducts/DiscountProducts"
 import { useContext, useEffect, useState } from "react"
 import { CompareContext } from "../contexts/CompareContext"
 import PriceCompare from "../components/PriceCompare"

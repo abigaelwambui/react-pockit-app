@@ -1,6 +1,6 @@
 import { useContext } from "react"
-import { ProductsContext } from "../contexts/ProductsContext"
-import ProductCard from "./ProductCard"
+import { ProductsContext } from "../../contexts/ProductsContext"
+import ProductCard from "../productcard/ProductCard"
 import { Link } from "react-router"
 import "./DiscountProducts.css"
 

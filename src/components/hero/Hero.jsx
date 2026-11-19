@@ -1,4 +1,4 @@
-import hero from "../assets/Hero-2.png"
+import hero from "../../assets/Hero-2.png"
 import "./Hero.css"
 
 
