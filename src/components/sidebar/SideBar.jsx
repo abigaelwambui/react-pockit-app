@@ -1,33 +1,62 @@
 import { useContext, useState } from "react"
 import { ProductsContext } from "../../contexts/ProductsContext"
 import "./SideBar.css"
+import Search from "../Search"
 
 export default function SideBar() {
 
     const {products, setProducts, allProducts} = useContext(ProductsContext)
 
-    const [category, setCategory] = useState("")
+    const [category, setCategory] = useState("all")
+
+    const [searchInput, setSearchInput] = useState("")
 
     function handleChange(event) {
-    const selectedCategory = event.target.value;
+        const selectedCategory = event.target.value;
 
-    setCategory(selectedCategory);
+        setCategory(selectedCategory);
 
-    if (selectedCategory === "all") {
-        setProducts(allProducts);
-    } else {
-        const filteredProducts = allProducts.filter(
-            (product) => product.category === selectedCategory
-        );
+  
+            const filteredProducts = allProducts.filter(
+                (product) => {
+                    const matchesCategory = selectedCategory === "all" || product.category === selectedCategory
 
-        setProducts(filteredProducts);
+                    const matchesSearch = product.name.toLowerCase().includes(searchInput.trim().toLowerCase())
+
+                    return matchesCategory && matchesSearch
+                }
+            );
+
+            setProducts(filteredProducts);
     }
-}
+
+     
+
+    
+    function handleInputChange (event) {
+        const value = event.target.value
+
+        setSearchInput(value)
+    
+
+        const searchedProducts = allProducts.filter((product)=> {
+            const matchesCategory = category === "all" || product.category === category
+
+            const matchesSearch = product.name.toLowerCase().includes(value.trim().toLowerCase())
+
+            return matchesCategory && matchesSearch
+        })
+
+        setProducts(searchedProducts)
+    }
 
     return (
         <aside className="sidebar bg-1 p-3">
             <nav className="sidebar-nav border-bottom py-3">
                 <div  className="sidebar-item flex justify-content-between align-items-center" >
+                    
+                    <Search handleInputChange={handleInputChange} searchInput={searchInput}/>
+
                     <ul className="list-unstyled">
                         <li className="sidebar-header">
                             <h5>Categories</h5>

@@ -108,6 +108,10 @@ main {
   padding: 20px;
 }
 
+.pagination {
+    margin-left: 270px;
+}
+
 @media (max-width: 768px) {
     .comparison-container {
         max-width: 100%;

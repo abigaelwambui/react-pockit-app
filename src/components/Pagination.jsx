@@ -12,7 +12,7 @@ export default function Pagination ({postsPerPage, totalPosts, setCurrentPage, c
     return (
         <>
         <nav aria-label="Page navigation example">
-            <ul className="pagination justify-content-end mx-5">
+            <ul className="pagination justify-content-start mx-5">
 
                 {pages.map((page, index) => {
                     return (

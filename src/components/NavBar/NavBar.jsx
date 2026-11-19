@@ -1,8 +1,13 @@
 import { Link } from "react-router";
 import logo from "../../assets/Pockit logo.png"
 import "./Nav.css"
+import { useContext, useState } from "react";
+import { StoresContext } from "../../contexts/StoresContext";
+import { ProductsContext } from "../../contexts/ProductsContext";
 
 export default function NavBar () {
+
+
     return (
         <nav className="navbar fixed-top sm:navbar-expand bg-1 fg-2">
             <div className="container-fluid">
@@ -37,14 +42,7 @@ export default function NavBar () {
                             </div>
                             
 
-                            <form className="searchbar hstack gap-2 ms-auto p-2" role="search">
-                                <input className="form-control  search-input" type="search" placeholder="Search to compare" aria-label="Search"/>
-                                <button className="btn-solid btn-icon theme-secondary search-button" type="submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                    </svg>
-                                </button>
-                            </form>
+                            
                         </div>
                     </dialog>
               
