@@ -54,7 +54,7 @@ export default function ProductsList() {
         <div className="container my-9">
             <h3>Browse Through All Products</h3>
 
-            <div className="row g-3 my-5">
+            <div className="row g-3">
                 {singularProducts.map((product) => {
                     const isSelected =
                         isCompareOpen &&
