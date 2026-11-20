@@ -9,7 +9,7 @@ export function StoresProvider({children}) {
     const [allStores, setAllStores] = useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:3000/retailers")
+        fetch("http://localhost:4000/retailers")
         .then ((response)=> response.json())
         .then ((data)=> {
             setStores(data)

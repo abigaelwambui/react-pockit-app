@@ -6,7 +6,7 @@ export function CouponsProvider({children}) {
     const [coupons, setCoupons] = useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:3000/coupons")
+        fetch("http://localhost:4000/coupons")
         .then((response)=> response.json())
         .then((data)=> setCoupons(data))
 

@@ -14,7 +14,7 @@ export default function StoreDetails() {
     const {isCompareOpen, selectedProduct, setIsCompareOpen, source} = useContext(CompareContext)
     
     useEffect (()=> {
-        fetch(`http://localhost:3000/retailers/${id}`)
+        fetch(`http://localhost:4000/retailers/${id}`)
         .then ((response)=> response.json())
         .then ((data)=> {
             setStore(data)

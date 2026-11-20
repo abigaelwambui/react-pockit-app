@@ -13,7 +13,7 @@ export default function SideCard({store}) {
     return (
         <div className="side-card">
             <ShopCard store={store} handleClick={handleClick}/>
-            {isFormOpen && (<ReviewsForm/>)}
+            {isFormOpen && (<ReviewsForm store={store}/>)}
         </div>
     )
 }

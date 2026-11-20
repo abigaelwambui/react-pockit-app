@@ -7,7 +7,7 @@ export function ProductsProvider({children}) {
     const [ allProducts, setAllProducts] = useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:3000/products")
+        fetch("http://localhost:4000/products")
         .then((response)=> response.json())
         .then((data)=> {
             setAllProducts(data)

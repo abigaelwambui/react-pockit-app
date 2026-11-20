@@ -6,8 +6,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: hwb(0 92% 7%);
-  color: rgb(0, 29, 2);
+
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -110,6 +111,16 @@ main {
 
 .pagination {
     margin-left: 270px;
+}
+
+.rating-select {
+    width: 150px;
+    border-radius: 8px;
+    border: 1p solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {

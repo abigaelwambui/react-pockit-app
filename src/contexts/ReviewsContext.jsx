@@ -6,7 +6,7 @@ export function ReviewsProvider ({children}) {
 
     const [reviews, setReviews] = useState([])
         useEffect (()=>{
-            fetch(`http://localhost:3000/reviews`)
+            fetch(`http://localhost:4000/reviews`)
             .then ((response)=> response.json())
             .then ((data)=> {
                 setReviews(data)

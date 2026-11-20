@@ -289,7 +289,7 @@
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Wireless+Earbuds",
       "couponId": "coupon-003",
       "discountAmount": 500,
-      "discountPercentage": 25.0,
+      "discountPercentage": 25,
       "hasDiscount": true
     },
     {
@@ -553,7 +553,7 @@
       "lastChecked": "2026-11-18T09:00:00Z",
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Sunflower+Cooking+Oil",
       "discountAmount": 30,
-      "discountPercentage": 10.0,
+      "discountPercentage": 10,
       "hasDiscount": true
     },
     {
@@ -571,7 +571,7 @@
       "lastChecked": "2026-11-18T09:00:00Z",
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Sunflower+Cooking+Oil",
       "discountAmount": 0,
-      "discountPercentage": 0.0,
+      "discountPercentage": 0,
       "hasDiscount": false
     },
     {
@@ -607,7 +607,7 @@
       "lastChecked": "2026-11-18T09:00:00Z",
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Long-Grain+Rice",
       "discountAmount": 0,
-      "discountPercentage": 0.0,
+      "discountPercentage": 0,
       "hasDiscount": false
     },
     {
@@ -733,7 +733,7 @@
       "lastChecked": "2026-11-18T09:00:00Z",
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Laundry+Detergent",
       "discountAmount": 0,
-      "discountPercentage": 0.0,
+      "discountPercentage": 0,
       "hasDiscount": false
     },
     {
@@ -805,7 +805,7 @@
       "lastChecked": "2026-11-18T09:00:00Z",
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Fresh+Milk",
       "discountAmount": 8,
-      "discountPercentage": 10.0,
+      "discountPercentage": 10,
       "hasDiscount": true
     },
     {
@@ -1384,7 +1384,7 @@
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Liquid+Hand+Soap",
       "couponId": "coupon-022",
       "discountAmount": 70,
-      "discountPercentage": 20.0,
+      "discountPercentage": 20,
       "hasDiscount": true
     },
     {
@@ -1821,7 +1821,7 @@
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Woven+Storage+Basket",
       "couponId": "coupon-011",
       "discountAmount": 160,
-      "discountPercentage": 19.0,
+      "discountPercentage": 19,
       "hasDiscount": true
     },
     {
@@ -1954,7 +1954,7 @@
       "productUrl": "https://www.jumia.co.ke/mlp-search/?q=Natural+Yoghurt",
       "couponId": "coupon-001",
       "discountAmount": 35,
-      "discountPercentage": 14.0,
+      "discountPercentage": 14,
       "hasDiscount": true
     },
     {
@@ -2901,6 +2901,16 @@
       "comment": "The product descriptions helped me compare features before choosing.",
       "date": "2026-11-17",
       "isDemo": true
+    },
+    {
+      "customerName": "Jane",
+      "rating": 5,
+      "title": "Great",
+      "comment": "Love it",
+      "retailerId": "shop-001",
+      "date": "2026-11-20",
+      "id": "ZBihFbjSc7Q"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

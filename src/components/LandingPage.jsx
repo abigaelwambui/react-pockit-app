@@ -16,7 +16,6 @@ export default function LandingPage() {
         <br/>
         <PopularStores/>
         <br/>
-        <hr/>
 
         </>
     )
