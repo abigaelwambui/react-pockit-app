@@ -37,4 +37,24 @@
     font-weight: 200;
 }
 
+@media (max-width: 768px) {
+    .pockit-show .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 
+    .pockit-show h1 {
+        font-size: 1.8rem;
+
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .how-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+}

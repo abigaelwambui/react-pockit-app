@@ -10,9 +10,11 @@ export default function SuccessfulStores(){
 
     return (
         <>
-        <div id="carouselMultiple" className="carousel slide" data-bs-ends="stop" style={{"--bs-carousel-items": 3, "--bs-carousel-items-gap": "1rem"}}>
-            <div className="stores container my-9" id="successful-stores">  
+        <div className="carousel slide" >
+            <div className="stores container my-5" id="successful-stores">  
                 <h2>Stores with the Most Successful Coupons</h2>
+
+            
 
                 <div className="d-flex justify-content-end align-items-center p-3">
 
@@ -30,6 +32,7 @@ export default function SuccessfulStores(){
                         </div>
                 </div>      
                
+               <div id="carouselMultiple" className="carousel slide" data-bs-ends="stop" style={{"--bs-carousel-items": 3, "--bs-carousel-items-gap": "1rem"}}>
                     <div className="carousel-inner">
                         
                         {successfulStores.map((store, index)=> (
@@ -42,10 +45,14 @@ export default function SuccessfulStores(){
                             
                             )
                         )}
-                    </div>
+                    </div>                    
+               </div>
+
+
 
                     
                 </div>
+
             </div>
      
         

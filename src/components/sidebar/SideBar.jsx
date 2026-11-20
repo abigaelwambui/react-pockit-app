@@ -101,33 +101,7 @@ export default function SideBar() {
                 </div>
                 <br/>
             </nav>  
-            <br/>
-            <div className="sidebar-footer mt-auto p-3">
-                <ul className="list-unstyled">
-                    <li className="sidebar-header">
-                            <h5>Sort by</h5>
-                        </li>
-                    <li className="sidebar-item">
-                        <input type="radio" name="sort" id="radioLabel" className="radio theme-secondary" />
-                        <label htmlFor="radioLabel" className="p-2 hover-lift"> Featured </label>
-                    </li>
-                    <li className="sidebar-item">
-                        <input type="radio" name="sort" id="radioLabel2" className="radio theme-secondary" />
-                        <label htmlFor="radioLabel2" className="p-2 hover-lift">Price: Low to High</label>
-                    </li>
-                    <li className="sidebar-item">
-                        <input type="radio" name="sort" id="radioLabel3" className="radio theme-secondary" />
-                        <label htmlFor="radioLabel3" className="p-2 hover-lift">Price: High to Low</label> 
-                    </li>
-                    <li className="sidebar-item">
-                        <input type="radio" name="sort" id="radioLabel4" className="radio theme-secondary" />
-                        <label htmlFor="radioLabel4" className="p-2 hover-lift">Newest</label>
-                    </li>
-                </ul>
-                
-                  
-                
-            </div>
+            
             
         </aside>
     )
