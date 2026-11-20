@@ -4,9 +4,9 @@ import { StoresContext } from "../contexts/StoresContext"
 import StoreCard from "./storecards/StoreCard"
 export default function SuccessfulStores(){
 
-    const { stores } = useContext(StoresContext)
+    const { allStores } = useContext(StoresContext)
 
-    const successfulStores = stores.filter((store)=> store.couponStats.performanceLabel === "top_performer")
+    const successfulStores = allStores.filter((store)=> store.couponStats.performanceLabel === "top_performer")
 
     return (
         <>

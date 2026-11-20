@@ -50,7 +50,7 @@ export default function ProductsList({products}) {
 
     return (
         <>
-        <div className="productlist container my-9">
+        <div className="productlist container my-9 flex-grow-1">
             <h3>Browse Through All Products</h3>
 
             <div className="row g-3">

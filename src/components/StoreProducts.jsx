@@ -4,9 +4,9 @@ import ProductCard from "./productcard/ProductCard"
 
 export default function StoreProducts({store}) {
 
-    const {products} = useContext(ProductsContext)
+    const {allProducts} = useContext(ProductsContext)
 
-    const storeProducts = products.filter((product)=> product.retailerId === store.id)
+    const storeProducts = allProducts.filter((product)=> product.retailerId === store.id)
     return (
         <>
             <div className="container my-9">

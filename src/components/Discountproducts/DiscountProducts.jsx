@@ -5,13 +5,13 @@ import { Link } from "react-router"
 import "./DiscountProducts.css"
 
 export default function DiscountProducts ({store}) {
-    const {products} = useContext(ProductsContext)
+    const {allProducts} = useContext(ProductsContext)
     
-    const discountProducts = products.filter((product)=> 
+    const discountProducts = allProducts.filter((product)=> 
         product.retailerId === store.id && product.hasDiscount === true)
 
      console.log("Store:", store)
-        console.log("All products:", products)
+        console.log("All products:", allProducts)
         console.log("Discount products:", discountProducts)
 
     return (

@@ -23,13 +23,14 @@ export default function Products() {
     return (
         <>
         <SideBar/>
-        <ProductsList products={currentPosts}/>
+        <div className="d-flex">
+            <ProductsList products={currentPosts}/>
+        </div>
         <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={products.length}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        />
+            postsPerPage={postsPerPage}
+            totalPosts={products.length}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}/>
                      
         </>
     )

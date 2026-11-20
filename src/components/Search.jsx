@@ -1,13 +1,13 @@
+import { useNavigate } from "react-router"
+
 export default function Search({handleInputChange, searchInput}) {
+
+
     return(
         <>
             <form className="searchbar hstack gap-2 ms-auto p-2" role="search">
-                <input onChange={handleInputChange} className="form-control  search-input" name="searchInput" type="search" value={searchInput} placeholder="Search products" aria-label="Search"/>
-                <button className="btn-solid btn-icon theme-secondary search-button" type="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                    </svg>
-                </button>
+                <input onChange={handleInputChange} className="form-control  search-input" name="searchInput" type="search" value={searchInput} placeholder="Search..." aria-label="Search"/>
+
             </form>
         </>
     )

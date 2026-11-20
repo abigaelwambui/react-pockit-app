@@ -1,12 +1,12 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import logo from "../../assets/Pockit logo.png"
 import "./Nav.css"
 import { useContext, useState } from "react";
 import { StoresContext } from "../../contexts/StoresContext";
 import { ProductsContext } from "../../contexts/ProductsContext";
+import Search from "../Search";
 
 export default function NavBar () {
-
 
     return (
         <nav className="navbar fixed-top sm:navbar-expand bg-1 fg-2">
@@ -35,13 +35,10 @@ export default function NavBar () {
                                     <li className="nav-item">
                                         <Link className="nav-link" to={"/products"}>Products</Link>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-                                    </li>
                                 </ul>
                             </div>
                             
-
+                  
                             
                         </div>
                     </dialog>
