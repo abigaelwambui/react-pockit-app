@@ -2740,5 +2740,167 @@
       "isRedeemable": false,
       "isAvailable": true
     }
+  ],
+  "reviews": [
+    {
+      "id": "review-001",
+      "retailerId": "shop-001",
+      "customerName": "Amina",
+      "rating": 5,
+      "title": "Good value for everyday shopping",
+      "comment": "I found the essentials I needed at fair prices. Checkout was straightforward.",
+      "date": "2026-11-02",
+      "isDemo": true
+    },
+    {
+      "id": "review-002",
+      "retailerId": "shop-002",
+      "customerName": "Brian",
+      "rating": 4,
+      "title": "Some really useful offers",
+      "comment": "The promotions made it easier to save on a few items. I would like to see more variety.",
+      "date": "2026-11-03",
+      "isDemo": true
+    },
+    {
+      "id": "review-003",
+      "retailerId": "shop-003",
+      "customerName": "Wanjiku",
+      "rating": 5,
+      "title": "Easy shopping experience",
+      "comment": "The product selection was clear and the ordering process was simple.",
+      "date": "2026-11-04",
+      "isDemo": true
+    },
+    {
+      "id": "review-004",
+      "retailerId": "shop-004",
+      "customerName": "Kevin",
+      "rating": 4,
+      "title": "Fresh items and fair prices",
+      "comment": "The groceries I bought were in good condition and reasonably priced.",
+      "date": "2026-11-05",
+      "isDemo": true
+    },
+    {
+      "id": "review-005",
+      "retailerId": "shop-005",
+      "customerName": "Njeri",
+      "rating": 5,
+      "title": "Happy with my tech purchase",
+      "comment": "The item matched its description and worked as expected.",
+      "date": "2026-11-06",
+      "isDemo": true
+    },
+    {
+      "id": "review-006",
+      "retailerId": "shop-006",
+      "customerName": "Daniel",
+      "rating": 4,
+      "title": "Useful home finds",
+      "comment": "I found practical household items without spending too much.",
+      "date": "2026-11-07",
+      "isDemo": true
+    },
+    {
+      "id": "review-007",
+      "retailerId": "shop-007",
+      "customerName": "Faith",
+      "rating": 5,
+      "title": "Nice clothing selection",
+      "comment": "There were good styles to choose from and the sizing information was helpful.",
+      "date": "2026-11-08",
+      "isDemo": true
+    },
+    {
+      "id": "review-008",
+      "retailerId": "shop-008",
+      "customerName": "Mercy",
+      "rating": 4,
+      "title": "Helpful pharmacy selection",
+      "comment": "The product information was clear and it was easy to find what I needed.",
+      "date": "2026-11-09",
+      "isDemo": true
+    },
+    {
+      "id": "review-009",
+      "retailerId": "shop-009",
+      "customerName": "Sheila",
+      "rating": 5,
+      "title": "Great everyday basics",
+      "comment": "The clothing options were versatile and the prices felt reasonable.",
+      "date": "2026-11-10",
+      "isDemo": true
+    },
+    {
+      "id": "review-010",
+      "retailerId": "shop-010",
+      "customerName": "Mark",
+      "rating": 4,
+      "title": "Good styles",
+      "comment": "I liked the range of casual pieces. More size options would make it even better.",
+      "date": "2026-11-11",
+      "isDemo": true
+    },
+    {
+      "id": "review-011",
+      "retailerId": "shop-011",
+      "customerName": "Esther",
+      "rating": 5,
+      "title": "Comfortable everyday wear",
+      "comment": "The pieces I chose were comfortable and easy to style.",
+      "date": "2026-11-12",
+      "isDemo": true
+    },
+    {
+      "id": "review-012",
+      "retailerId": "shop-012",
+      "customerName": "Peter",
+      "rating": 4,
+      "title": "Convenient to browse",
+      "comment": "It was easy to compare the available pharmacy products.",
+      "date": "2026-11-13",
+      "isDemo": true
+    },
+    {
+      "id": "review-013",
+      "retailerId": "shop-013",
+      "customerName": "Joy",
+      "rating": 5,
+      "title": "Clear product information",
+      "comment": "The product details made it easier to choose what I needed.",
+      "date": "2026-11-14",
+      "isDemo": true
+    },
+    {
+      "id": "review-014",
+      "retailerId": "shop-014",
+      "customerName": "Lucy",
+      "rating": 5,
+      "title": "Good grocery selection",
+      "comment": "I found several pantry essentials in one place.",
+      "date": "2026-11-15",
+      "isDemo": true
+    },
+    {
+      "id": "review-015",
+      "retailerId": "shop-015",
+      "customerName": "Samuel",
+      "rating": 4,
+      "title": "Practical household products",
+      "comment": "The selection had useful items for keeping the home organised.",
+      "date": "2026-11-16",
+      "isDemo": true
+    },
+    {
+      "id": "review-016",
+      "retailerId": "shop-016",
+      "customerName": "Irene",
+      "rating": 5,
+      "title": "Good gadget options",
+      "comment": "The product descriptions helped me compare features before choosing.",
+      "date": "2026-11-17",
+      "isDemo": true
+    }
   ]
 }

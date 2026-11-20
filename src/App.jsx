@@ -8,6 +8,7 @@ import AppRoutes from './routes/routes'
 import { CompareProvider } from './contexts/CompareContext'
 import { CouponsProvider } from './contexts/CouponsContext'
 import NavBar from './components/NavBar/NavBar'
+import { ReviewsProvider } from './contexts/ReviewsContext'
 
 function App() {
 
@@ -18,12 +19,14 @@ function App() {
       <ProductsProvider>
         <CompareProvider>
           <CouponsProvider>
-            <NavBar/>
-            <AppRoutes/>
-            <br/>
-            <hr/>
-            <br/>
-            <Footer/>
+            <ReviewsProvider>
+              <NavBar/>
+              <AppRoutes/>
+              <br/>
+              <hr/>
+              <br/>
+              <Footer/>
+            </ReviewsProvider>
           </CouponsProvider>
         </CompareProvider> 
       </ProductsProvider>  

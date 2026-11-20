@@ -1,4 +1,4 @@
-import ContactForm from "./ContactForm";
+
 import Hero from "./hero/Hero";
 import HowItWorks from "./howitworks/HowItWorks";
 import PopularStores from "./PopularStores";
@@ -17,7 +17,7 @@ export default function LandingPage() {
         <PopularStores/>
         <br/>
         <hr/>
-        <ContactForm/>
+
         </>
     )
 }

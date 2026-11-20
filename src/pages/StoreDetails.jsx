@@ -5,6 +5,7 @@ import { CompareContext } from "../contexts/CompareContext"
 import PriceCompare from "../components/PriceCompare"
 import SideCard from "../components/sideCard"
 import Coupons from "../components/Coupons"
+import Reviews from "../components/Reviews"
 
 export default function StoreDetails() {
 
@@ -20,6 +21,8 @@ export default function StoreDetails() {
         })
     }, [id])
 
+
+
     return (
         <div className="d-flex">
         <SideCard store={store}/>
@@ -32,6 +35,7 @@ export default function StoreDetails() {
                     <DiscountProducts store={store}/>
                     {isCompareOpen && source === "storeDetails" && (<PriceCompare specificProduct={selectedProduct} onClose={() => setIsCompareOpen(false)}/>)}
                 </div>
+                <Reviews store={store}/>
             </div>
 
         </div>
